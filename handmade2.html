@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SmartWalls.AI</title>
+     
+	<meta name="description" content="Get new wallpapers every week for your desktop, laptop, and mobile devices.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+      
+	<link rel="stylesheet" type="text/css" href="new.css">
+	<style>
+        body {
+            font-family: 'poppins',sans-serif;
+        }
+        nav {
+            background-color: #4f4f4a;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        .search-bar {
+            margin: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .wallpapers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .wallpaper {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .wallpaper img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<h1>Cricket</h1>
+		<nav>
+			<a href="index1.html">Home</a> |
+            <a href="handmade.html">Handmade Wallpapers</a> |
+			<a href="all wallpapers.html">All Wallpapers</a> |
+			<a href="about.html">About</a> |
+			<a href="contact us.html">Contact</a>
+		</nav>
+		<div class="search-bar">
+			<input type="text" placeholder="Search wallpapers...">
+		</div>
+	</header>
+	<main>
+        &nbsp;
+                <p><b>MS Dhoni(1080x1920)</b></p>
+              <img src="Cricket.jpg"width="270" height="495"></img>
+             <p> <a href="https://drive.google.com/uc?export=download&id=1xtQYp8o6hbPkKghD3hJ2rBEgCFJCLIHB">  <button class="btn"><i class="fa fa-download"></i> Download</button></a></p>
+             &nbsp; 
+             <p><b>M.Shami(1080x1920)</b></p>
+             <img src="Cricket (1).jpg"width="270" height="495"></img>
+              <p><a href="https://drive.google.com/uc?export=download&id=17qkAc403xMkwY9wYSSIF0wOChVaIvGLK">  <button class="btn"><i class="fa fa-download"></i> Download</button></a></p>
+            </main>
+      
+  
+	<footer>
+		<p>Copyright &copy; SmartWalls.AI</p>
+	</footer>
+    <script>
+        const searchBar = document.querySelector('.search-bar input');
+        searchBar.addEventListener('keyup', filterWallpapers);
+
+        function filterWallpapers() {
+            const filter = searchBar.value.toUpperCase();
+            const wallpapers = document.querySelectorAll('.wallpaper');
+
+            wallpapers.forEach(wallpaper => {
+                const img = wallpaper.querySelector('img');
+                const text = img.alt;
+
+                if (text.toUpperCase().indexOf(filter) > -1) {
+                    wallpaper.style.display = '';
+                } else {
+                    wallpaper.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

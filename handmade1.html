@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SmartWalls.AI</title>
+     
+	<meta name="description" content="Get new wallpapers every week for your desktop, laptop, and mobile devices.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+      
+	<link rel="stylesheet" type="text/css" href="new.css">
+	<style>
+        body {
+            font-family: 'poppins',sans-serif;
+        }
+        nav {
+            background-color: #4f4f4a;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        .search-bar {
+            margin: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .wallpapers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .wallpaper {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .wallpaper img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<h1>Football</h1>
+		<nav>
+			<a href="index1.html">Home</a> |
+            <a href="handmade.html">Handmade Wallpapers</a> |
+			<a href="all wallpapers.html">All Wallpapers</a> |
+			<a href="about.html">About</a> |
+			<a href="contact us.html">Contact</a>
+		</nav>
+		<div class="search-bar">
+			<input type="text" placeholder="Search wallpapers...">
+		</div>
+	</header>
+	<main>
+        &nbsp;
+                <p><b>MESSI BARCELONA(1080x1920)</b></p>
+              <img src="VAMOS.png"width="270" height="495"></img>
+             <p> <a href="https://drive.google.com/uc?export=download&id=1FD7Qu-yHhtk0kdfQIRWwKsD1TAF6Iois">  <button class="btn"><i class="fa fa-download"></i> Download</button></a></p>
+             &nbsp; 
+             <p><b>RONALDO REAL MADRID(1080x1920)</b></p>
+             <img src="VAMOS (1).png"width="270" height="495"></img>
+              <p><a href="https://drive.google.com/uc?export=download&id=1G6QWnNRxunQY4Srgv1PK00tMGuOjXR7O">  <button class="btn"><i class="fa fa-download"></i> Download</button></a></p>
+              &nbsp;
+              <p><b>RAMOS REAL MADRID(1080x1920)</b></p>
+              <img src="VAMOS (4).png"width="270" height="495"></img>
+              <p><a href="https://drive.google.com/uc?export=download&id=109voFEUQceh0L0DBe1ZySkkP30BLN2mo">  <button class="btn"><i class="fa fa-download"></i> Download</button></a></p>
+              &nbsp;
+              <p><b>MALDINI AC MILAN(1080x1920)</b></p>
+              <img src="VAMOS (2).png"width="270" height="495"></img>
+             <p> <a href="https://drive.google.com/uc?export=download&id=1r0QCkezYQwakPqGwWHpbOZyxdcYx1PJK">  <button class="btn"><i class="fa fa-download"></i> Download</button></a></p>
+             &nbsp;
+             <p><b>E.Martinez WC(1080x1920)</b></p>
+             <img src="VAMOS (6).png"width="270" height="495"></img>
+            <p> <a href="https://drive.google.com/uc?export=download&id=10UrEUnY47QNuiC9yUsKGXCXHgkZOYsEo">  <button class="btn"><i class="fa fa-download"></i> Download</button></a></p>
+            &nbsp;
+            <p><b>Mbappe The French Beast (1080x1920)</b></p>
+            <img src="VAMOS.jpg"width="270" height="495"></img>
+             <p><a href="https://drive.google.com/uc?export=download&id=1PT9Z6pJWckdbTC4Vpibt4YhJGSluUjDU">  <button class="btn"><i class="fa fa-download"></i> Download</button></a></p>
+            &nbsp;
+             <p><b>NEYMAR BRAZIL(1080x1920)</b></p>
+             <img src="VAMOS (5).png"width="270" height="495"></img>
+              <p><a href="https://drive.google.com/uc?export=download&id=1EGBLjXRLpdeULqex3i7nh54Ve5iTeA_6">  <button class="btn"><i class="fa fa-download"></i> Download</button></a></p>
+              <p><b>Van Dijk The tackle god(1080x1920)</b></p>
+              <img src="VAMOS (7).jpg"width="270" height="495"></img>
+               <p><a href="https://drive.google.com/uc?export=download&id=C">  <button class="btn"><i class="fa fa-download"></i> Download</button></a></p>
+ 
+            </main>
+      
+  
+	<footer>
+		<p>Copyright &copy; SmartWalls.AI</p>
+	</footer>
+    <script>
+        const searchBar = document.querySelector('.search-bar input');
+        searchBar.addEventListener('keyup', filterWallpapers);
+
+        function filterWallpapers() {
+            const filter = searchBar.value.toUpperCase();
+            const wallpapers = document.querySelectorAll('.wallpaper');
+
+            wallpapers.forEach(wallpaper => {
+                const img = wallpaper.querySelector('img');
+                const text = img.alt;
+
+                if (text.toUpperCase().indexOf(filter) > -1) {
+                    wallpaper.style.display = '';
+                } else {
+                    wallpaper.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+      
+	<title>SmartWalls.AI</title>
+	<meta name="description" content="Get exclusive wallpapers for your desktop, laptop, and mobile devices.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="new1.css">
+	<style>
+        body {
+            font-family: 'poppins',sans-serif;
+        }
+        nav {
+            background-color: #4f4f4a;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        .search-bar {
+            margin: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .wallpapers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .wallpaper {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .wallpaper img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<h1>About</h1>
+		<nav>
+			<a href="index1.html">Home</a> |
+            <a href="handmade.html">Handmade Wallpapers</a> |
+			<a href="all wallpapers.html">All Wallpapers</a> |
+			<a href="about.html">About</a> |
+			<a href="contact us.html">Contact</a>
+		</nav>
+    </header>
+    &nbsp;
+&nbsp;
+&nbsp;
+	<main>
+        <p>________________________________________________________________________________________________________________</p>
+        <p><h1>Update 0.0.1-</h1></p>
+        <p><b>1.Minor GUI updates</b></p>
+        <p><b>2.Release of new HANDMADE wallpapers!</b></p>
+        <p><b>3.New section called <a href="handmade.html">handmade wallpapers</a> added in navigation menu! </b></p>
+        <p><b>4.A section for new Releases added!</b></p>
+        <p><b>5.Mobile section updated!</section></b></p>
+        
+        <p>________________________________________________________________________________________________________________</p>
+
+<p><h3>SmartWalls.AI</h3><h4>is an wallpaper website with beautiful AI genrated wallpaper.
+     This is an indie project by 2 devs-</h4></p>
+     <p><h3>Arka Pal</h3></p>
+     <p><h3>Sanchit Raj</h3></p>
+     <u>Extras:</u>
+     <p><h3>Projector</h3></p>
+     <p>________________________________________________________________________________________________________________</p>
+     <p>This is how it works</p>
+        <p>  1.We genrate new images every week using <a href="https://chat.openai.com/">DALL·E 3</a></p>
+            <p> 2.We edit it Mannualy </p>
+                <p>3.We upload it on our website to get you new and high quality wallpapers every week.  </p>
+                <p>________________________________________________________________________________________________________________</p>
+                <p>Hosted on <a href="https://www.netlify.com/">netlify</a></p>
+                <p>Please follow us on our socials for supporting.</p> 
+                <p>________________________________________________________________________________________________________________</p>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2489617671610970"
+                crossorigin="anonymous"></script>
+           <!-- SmartWalls ads -->
+           <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-2489617671610970"
+                data-ad-slot="6030193821"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+           <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+           </script>
+    </footer>
+    <script>
+        const searchBar = document.querySelector('.search-bar input');
+        searchBar.addEventListener('keyup', filterWallpapers);
+    
+        function filterWallpapers() {
+            const filter = searchBar.value.toUpperCase();
+            const wallpapers = document.querySelectorAll('.wallpaper');
+    
+            wallpapers.forEach(wallpaper => {
+                const img = wallpaper.querySelector('img');
+                const text = img.alt;
+    
+                if (text.toUpperCase().indexOf(filter) > -1) {
+                    wallpaper.style.display = '';
+                } else {
+                    wallpaper.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    </body>
+    </html>

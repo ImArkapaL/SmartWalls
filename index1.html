@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SmartWalls.AI</title>
+	<meta name="description" content="Get new wallpapers every week for your desktop, laptop, and mobile devices.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     
+	<link rel="stylesheet" type="text/css" href="new.css">
+	<style>
+        body {
+            font-family: 'poppins',sans-serif;
+        }
+        nav {
+            background-color: #4f4f4a;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        .search-bar {
+            margin: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .wallpapers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .wallpaper {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .wallpaper img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+     
+</head>
+<body>
+	<header>
+		<h1><i>Welcome to </i><b>SmartWalls.AI</b></h1>
+		<p>Get AI genrated, handpicked and mannualy edited wallpapers for your desktop, laptop, and mobile devices every week on SmartWalls.</p>
+		<nav>
+			<a href="index1.html">Home</a> |
+            <a href="handmade.html">Handmade Wallpapers</a> |
+			<a href="all wallpapers.html">All Wallpapers</a> |
+			<a href="about.html">About us</a> |
+			<a href="contact us.html">Contact</a>
+		</nav>
+            <p><h1>New Releases!</h1></p>
+            &nbsp;
+            <marquee><a href="page5.html"><img src="mountain.jpg" width="250" height="250"></a>
+                <a href="page5.html"><img src="mountain (2).jpg" width="250" height="250"></a>
+                <a href="page5.html"><img src="mountain (3).jpg" width="250" height="250"></a>
+                <a href="page5.html"><img src="mountain (4).jpg" width="250" height="250"></a>
+                <a href="page5.html"><img src="mountain (5).jpg" width="250" height="250"></a>
+                <a href="page5.html"><img src="mountain (6).jpg" width="250" height="250"></a>
+                <a href="handmade2.html"><img src="Cricket.jpg" width="135" height="250"></a>
+                <a href="handmade2.html"><img src="Cricket (1).jpg" width="135" height="250"></a>
+                <a href="handmade1.html"><img src="VAMOS (7).jpg" width="135" height="250"></a></marquee>
+                &nbsp;
+            
+                <div class="search-bar">
+                    <input type="text" placeholder="Search wallpapers...">
+                </div>
+	</header>
+	<main>
+		<section>
+            &nbsp;
+			<h2>Desktop Wallpapers</h2>
+			<ul>
+				<h4><p><b>Dream City</b></p>
+                <a href="page 1.html"><img src="_84174f23-ab33-4108-979e-fa259fae4cbe-fotor-20240207163552.png"></a>
+               <p><b>Japanese Temple</b></p>
+                <a href="page2.html"><img src="_aab987e5-935e-4457-bd58-775ba89a67ea-fotor-20240207163155.png"></a>
+                <p><b>Samurai</b></p>
+                <a href="page3.html"><img src="_aace47a8-21a9-4915-8450-57f33885f6ea-fotor-20240207163514.png"></a>
+                <p><b>Cars</b></p>
+                <a href="page4.html"><img src="_1e45ee9c-5761-48f3-8ab6-ee5b349167ee-fotor-20240207162847.png"></a></h4>
+                <p><b>Mountains</b></p>
+                <a href="page5.html"><img src="mountain (6)-fotor-20240329141846.png"></a></h4>
+                <p>________________________________________________________________________________________________________________</p>
+                <P><h3><u>Handmade</u></h3></P>
+                <p><b><h1>Coming SOON!</h1></b></p>
+                <p>________________________________________________________________________________________________________________</p>  
+			</ul>
+		</section>
+		<section>
+            &nbsp;
+            &nbsp;
+            &nbsp;    
+        &nbsp;
+        &nbsp;
+            <h2>Mobile Wallpapers</h2>
+			<ul>
+                <p>________________________________________________________________________________________________________________</p>
+              <P><h3><u>Handmade</u></h3></P>
+                <p><h4>Football</h4></p>
+                <a href="handmade1.html"><img src="VAMOS.png"width="405" height="720"></a>
+                <p><h4>Cricket</h4></p>
+                <a href="handmade2.html"><img src="Cricket.jpg"width="405" height="720"></a>
+                <p>________________________________________________________________________________________________________________</p>
+
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright &copy; SmartWalls.AI</p>
+	</footer>
+    <script>
+        const searchBar = document.querySelector('.search-bar input');
+        searchBar.addEventListener('keyup', filterWallpapers);
+
+        function filterWallpapers() {
+            const filter = searchBar.value.toUpperCase();
+            const wallpapers = document.querySelectorAll('.wallpaper');
+
+            wallpapers.forEach(wallpaper => {
+                const img = wallpaper.querySelector('img');
+                const text = img.alt;
+
+                if (text.toUpperCase().indexOf(filter) > -1) {
+                    wallpaper.style.display = '';
+                } else {
+                    wallpaper.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

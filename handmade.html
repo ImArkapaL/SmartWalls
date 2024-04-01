@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+	<title>SmartWalls.AI</title>
+	<meta name="description" content="Get new wallpapers every week for your desktop, laptop, and mobile devices.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="new.css">
+      
+	<style>
+        body {
+            font-family: 'poppins',sans-serif;
+        }
+        nav {
+            background-color: #4f4f4a;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        .search-bar {
+            margin: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .wallpapers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .wallpaper {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .wallpaper img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<h1>Handmade Wallpapers</h1>
+		<nav>
+			<a href="index1.html">Home</a> |
+            <a href="handmade.html">Handmade Wallpapers</a> |
+			<a href="all wallpapers.html">All Wallpapers</a> |
+			<a href="about.html">About</a> |
+			<a href="contact us.html">Contact</a>
+		</nav>
+		<div class="search-bar">
+			<input type="text" placeholder="Search wallpapers...">
+		</div>
+	</header>
+	<main>
+
+		<section>
+			<h3>Desktop Wallpapers</h3>
+            <ul>
+                <p><b><h1>Coming SOON!</h1></b></p>
+            </ul>
+        </section>
+		<section>
+            <p>________________________________________________________________________________________________________________</p>
+            <h3>Mobile Wallpapers</h3>
+			<ul>
+                <p><h4>Football</h4></p>
+                <a href="handmade1.html"><img src="VAMOS.png"width="270" height="495"></a>
+                <p><h4>Cricket</h4></p>
+                <a href="handmade2.html"><img src="Cricket.jpg"width="270" height="495"></a>
+            </ul>
+		</section>
+	</main>
+      
+  
+	<footer>
+		<p>Copyright &copy; SmartWalls.AI</p>
+	</footer>
+    <script>
+        const searchBar = document.querySelector('.search-bar input');
+        searchBar.addEventListener('keyup', filterWallpapers);
+
+        function filterWallpapers() {
+            const filter = searchBar.value.toUpperCase();
+            const wallpapers = document.querySelectorAll('.wallpaper');
+
+            wallpapers.forEach(wallpaper => {
+                const img = wallpaper.querySelector('img');
+                const text = img.alt;
+
+                if (text.toUpperCase().indexOf(filter) > -1) {
+                    wallpaper.style.display = '';
+                } else {
+                    wallpaper.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

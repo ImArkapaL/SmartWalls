@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SmartWalls.AI</title>
+      
+      
+	<meta name="description" content="Get exclusive wallpapers for your desktop, laptop, and mobile devices.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="new.css">
+	<style>
+        body {
+            font-family: 'poppins',sans-serif;
+        }
+        nav {
+            background-color: #4f4f4a;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        .search-bar {
+            margin: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .wallpapers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .wallpaper {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .wallpaper img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<h1>Cars</h1>
+		<nav>
+			<a href="index1.html">Home</a> |
+            <a href="handmade.html">Handmades</a> |
+			<a href="all wallpapers.html">All Wallpapers</a> |
+			<a href="about.html">About</a> |
+			<a href="contact.html">Contact</a>
+		</nav>
+		<div class="search-bar">
+			<input type="text" placeholder="Search wallpapers...">
+		</div>
+	</header>
+   
+&nbsp;
+&nbsp;
+&nbsp;
+	<main>
+<P><img src="_1e45ee9c-5761-48f3-8ab6-ee5b349167ee-fotor-20240207162847.png" width="426" height="240"></P><p><b>(1920x1080)</b></p>
+<a href="https://drive.google.com/uc?export=download&id=1eQtohA4OYVNokeWjRvlyPuRWlFLoQ0ie">  <button class="btn"><i class="fa fa-download"></i> Download</button></a>
+<p><img src="_215e7c40-87dd-4c86-9aca-d247185a98a1-fotor-20240207163044.png" width="426" height="240"></p><p><b>(1920x1080)</b></p>
+<a href="https://drive.google.com/uc?export=download&id=1Xl5AHDqzFi5hby_oMEsz57UgKL0aUUg0">  <button class="btn"><i class="fa fa-download"></i> Download</button></a>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2489617671610970"
+     crossorigin="anonymous"></script>
+  	
+<footer>
+		<p>Copyright &copy; SmartWalls.AI</p>
+	</footer>
+    <script>
+        const searchBar = document.querySelector('.search-bar input');
+        searchBar.addEventListener('keyup', filterWallpapers);
+
+        function filterWallpapers() {
+            const filter = searchBar.value.toUpperCase();
+            const wallpapers = document.querySelectorAll('.wallpaper');
+
+            wallpapers.forEach(wallpaper => {
+                const img = wallpaper.querySelector('img');
+                const text = img.alt;
+
+                if (text.toUpperCase().indexOf(filter) > -1) {
+                    wallpaper.style.display = '';
+                } else {
+                    wallpaper.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
