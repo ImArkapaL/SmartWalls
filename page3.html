@@ -58,10 +58,7 @@
 			<a href="about.html">About</a> |
 			<a href="contact us.html">Contact</a>
 		</nav>
-		<div class="search-bar">
-			<input type="text" placeholder="Search wallpapers...">
-		</div>
-	</header>
+ 	</header>
    
 &nbsp;
 &nbsp;
@@ -79,25 +76,5 @@
 <footer>
 		<p>Copyright &copy; SmartWalls.AI</p>
 	</footer>
-    <script>
-        const searchBar = document.querySelector('.search-bar input');
-        searchBar.addEventListener('keyup', filterWallpapers);
-
-        function filterWallpapers() {
-            const filter = searchBar.value.toUpperCase();
-            const wallpapers = document.querySelectorAll('.wallpaper');
-
-            wallpapers.forEach(wallpaper => {
-                const img = wallpaper.querySelector('img');
-                const text = img.alt;
-
-                if (text.toUpperCase().indexOf(filter) > -1) {
-                    wallpaper.style.display = '';
-                } else {
-                    wallpaper.style.display = 'none';
-                }
-            });
-        }
-    </script>
-</body>
+ </body>
 </html>
