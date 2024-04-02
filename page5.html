@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-      
+<head>                                        
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2489617671610970"
+     crossorigin="anonymous"></script><meta name="google-adsense-account" content="ca-pub-2489617671610970">      
       
 	<title>SmartWalls.AI</title>
 	<meta name="description" content="Get exclusive wallpapers for your desktop, laptop, and mobile devices.">
@@ -58,10 +59,7 @@
 			<a href="about.html">About</a> |
 			<a href="contact us.html">Contact</a>
 		</nav>
-		<div class="search-bar">
-			<input type="text" placeholder="Search wallpapers...">
-		</div>
-	</header>
+ 	</header>
    
 &nbsp;
 &nbsp;
@@ -82,25 +80,5 @@
 <footer>
 		<p>Copyright &copy; SmartWalls.AI</p>
 	</footer>
-    <script>
-        const searchBar = document.querySelector('.search-bar input');
-        searchBar.addEventListener('keyup', filterWallpapers);
-
-        function filterWallpapers() {
-            const filter = searchBar.value.toUpperCase();
-            const wallpapers = document.querySelectorAll('.wallpaper');
-
-            wallpapers.forEach(wallpaper => {
-                const img = wallpaper.querySelector('img');
-                const text = img.alt;
-
-                if (text.toUpperCase().indexOf(filter) > -1) {
-                    wallpaper.style.display = '';
-                } else {
-                    wallpaper.style.display = 'none';
-                }
-            });
-        }
-    </script>
-</body>
+ </body>
 </html>
