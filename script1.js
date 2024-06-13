@@ -1,10 +1,12 @@
+
+
 const searchBox = document.querySelector('.search-box');
 const searchBtn = document.querySelector('.search-btn');
 const search = document.querySelector('.search');
 const closeBtn = document.querySelector('.close-btn');
-const boxes = document.querySelectorAll('.box');
 
 searchBtn.addEventListener('click', function(){
+  console.log(search.classList.contains('active'));
   if(search.classList.contains('active')){
     searchBox.value = ''
   }
@@ -17,18 +19,4 @@ searchBtn.addEventListener('click', function(){
 closeBtn.addEventListener('click', function(){
   search.classList.remove('active');
   searchBox.value = '';
-})
-
-searchBox.addEventListener('input', function(){
-  const searchTerm = searchBox.value.toLowerCase();
-  boxes.forEach(function(box){
-    const heading = box.querySelector('h2').innerText.toLowerCase();
-    const paragraph = box.querySelector('p').innerText.toLowerCase();
-    if(heading.includes(searchTerm) || paragraph.includes(searchTerm)){
-      box.style.display = 'block';
-    }
-    else {
-      box.style.display = 'none';
-    }
-  })
 })
