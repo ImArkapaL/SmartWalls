@@ -8,11 +8,24 @@
 }
 
 .home-btn{
- font-size: 25px;
-  background-color: #4f4f4a;
+  
+  font-size: 25px;
+  background-color: #4f4f4a;;
   color: white;
   border: none;
-  cursor: pointer; 
+  cursor: pointer;
+  position: absolute; 
+  padding: 8px;
+}
+
+.logo{
+  
+  font-size: 25px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+  
 }
 
 .search-btn, .close-btn {
@@ -324,4 +337,7 @@ background-color: rgb(38,41,40);
 a img{
 
   margin: 7px;
+}
+.contact{
+  color: white;
 }
