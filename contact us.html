@@ -15,24 +15,7 @@
 	<meta name="description" content="Get exclusive wallpapers for your desktop, laptop, and mobile devices.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="new.css"><link rel="icon" type="image/x-icon" href="SmartWalls.AI.png">
-	<style>
-        body {
-            font-family: 'poppins',sans-serif;
-        }
-        nav {
-            background-color: #4f4f4a;
-            padding: 10px;
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-        nav a:hover {
-            color: #ffffff;
-        }
-        
-    </style>
+
 </head>
   <body> <nav>
             <ul>
@@ -102,7 +85,13 @@
 </main>
 <footer>
     <p>Copyright &copy; SmartWalls.AI</p>
-</footer>
+   <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+        </div>
+        
+	</footer>
 <script>
     const searchBar = document.querySelector('.search-bar input');
     searchBar.addEventListener('keyup', filterWallpapers);

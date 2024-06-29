@@ -7,11 +7,35 @@
   box-sizing: border-box;
 }
 
+:root {
+ 
+  --primary-color: rgb(38,41,40);
+  --secondary-color: #4f4f4a;
+  --font-color: white;
+  --bg-color: rgb(175, 175, 175);
+  --heading-color: #bf4b37;
+  --nav-border: #4f4f4a;
+  --marquee: rgba(38, 41, 40, 0.404);
+
+}
+
+[data-theme="dark"] {
+  --primary-color: #DDDDDD;
+  --secondary-color:rgb(255, 255, 255);
+  --font-color: #313131;
+  --bg-color: white;
+  --heading-color: #ff6347;
+  --nav-border: black;
+--marquee: #dddddd67;
+}
+
+
+
 .home-btn{
   
   font-size: 25px;
-  background-color: #4f4f4a;;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--font-color);
   border: none;
   cursor: pointer;
   position: absolute; 
@@ -21,7 +45,7 @@
 .logo{
   
   font-size: 25px;
-  color: white;
+  color: var(--font-color);
   border: none;
   cursor: pointer;
   
@@ -32,8 +56,8 @@
   width: 40px;
   height: 40px;
   font-size: 25px;
-  background-color: #4f4f4a;;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--font-color);
   border: none;
   cursor: pointer;
   position: absolute;
@@ -43,10 +67,12 @@
 .close-btn {
   color: red;
   z-index: -1;
+  background-color: var(--secondary-color);
 }
 
 .search-btn {
-  color: white;
+  color: var(--font-color);
+  background-color: var(--secondary-color);
   
 }
 
@@ -78,7 +104,7 @@
 
 .active .close-btn {
   z-index: 0;
-  transform: translate(250px, 2px);
+  transform: translate(-45px, 2px);
 }
 
 *{
@@ -92,15 +118,18 @@
 }
 body {
     font-family: 'poppins',sans-serif;
-    background-color: white;
+    background-color:var(--bg-color);
+    margin: 5px;
+    padding: 5px;
+border-radius: 20px;
    
   }
 
   .container{
     border-radius: 10px;
-      background: white;
+      background:var(--bg-color);
       padding:15px 9%;
-    position: relative;
+    
     left: 10px ;
    
   }
@@ -109,8 +138,8 @@ body {
   .container .heading{
       text-align: center;
       padding-bottom: 15px;
-      color:#fff;
-      text-shadow: 0 5px 10px rgba(0,0,0,.2);
+     
+            text-shadow: 0 5px 10px rgba(0,0,0,.2);
       font-size: 50px;
     
     
@@ -134,9 +163,8 @@ body {
   
   .container .box-container .box{
    
-      box-shadow: 0 5px 10px rgba(0,0,0,.2);
       border-radius: 5px;
-      background: rgb(38,41,40);
+      background-color: var(--primary-color);
       padding: 1em ;
       
   }
@@ -149,29 +177,29 @@ body {
 
   
   .container .box-container .box h3{
-      color: white;
+      color: var(--font-color);
       font-size: 22px;
       padding:10px 0;
   }
 
   .container .box-container .box h2{
-    color: white;
+    color: var(--font-color);
     
 }
 .container .box-container .box h1{
-  color: white;
+  color: var(--font-color);
   
 }
 .container .box-container .box h4{
-  color: white;
+  color: var(--font-color);
   
 }
 .container .box-container .box h5{
-  color: white;
+  color: var(--font-color);
   
 }
 .container .box-container .box h6{
-  color: white;
+  color: var(--font-color);
   
 }
 
@@ -181,18 +209,18 @@ body {
 }
   
   .container .box-container .box p{
-      color: white;
+      color: var(--font-color);
       font-size: 15px;
       line-height: 1.8;
   }
 
   .container .box-container .box b{
-    color: white;
+    color: var(--font-color);
  
 }
 
 .container .box-container .box u{
-  color: white;
+  color: var(--font-color);
 
 }
   
@@ -201,7 +229,7 @@ body {
     border-radius: 10px;
     background-color: #ff6347;
     border: none;
-    color: white;
+    color: var(--font-color);
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
@@ -229,7 +257,7 @@ body {
     border-radius: 10px;
     background-color: #ff6347;
     border: none;
-    color: white;
+    color: var(--font-color);
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
@@ -243,11 +271,12 @@ body {
 
 
   header {
-    background-color: #ff6347;
-    color: #ffffff;
+    background-image: url("_aab987e5-935e-4457-bd58-775ba89a67ea-fotor-20240207163155.png");    color: #ffffff;
+    background-size: 1664px 936px;
     padding: 20px;
     font-family: 'poppins',sans-serif;
     align-self: center;
+    border-radius: 20px;
   }
   
   h1 {
@@ -259,7 +288,8 @@ body {
   h2 {
     font-size: 24px;
     padding: 10px;
-    background-color: #4f4f4a;
+    background-color: var(--secondary-color);
+    border-radius: 7px;
     color: #ffffff;
     margin: 0;
     font-family: 'poppins',sans-serif;
@@ -288,22 +318,28 @@ body {
   footer {
     background-color: #ff6347;
     color: #ffffff;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
-    margin-top: 20px;
     font-family: 'poppins',sans-serif;
+    border-radius: 20px;
   }
 
   nav {
+  
     position: sticky;
     top: 0;
-    background-color: #4f4f4a;
+    background-color: var(--secondary-color);
     padding: 10px;
     z-index: 1;
     align-items: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-color: var(--nav-border);
+    color: var(--font-color);
 }
 nav a {
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
     cursor: pointer;
     margin-right: 10px;
@@ -326,10 +362,11 @@ nav li {
 }
 
 .marquee {
-background-color: rgb(38,41,40);
+background-color: var(--marquee);
   padding: 10px ;
   border-radius: 5px;
   margin: 2px;
+  color: var(--font-color);
 }
 
 
@@ -339,5 +376,63 @@ a img{
   margin: 7px;
 }
 .contact{
-  color: white;
+  color: var(--font-color);
 }
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  margin-top: 10px;
+  align-items: center;
+
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+  align-items: center;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  align-items: center;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
