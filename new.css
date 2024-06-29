@@ -12,7 +12,7 @@
   --primary-color: rgb(38,41,40);
   --secondary-color: #4f4f4a;
   --font-color: white;
-  --bg-color: rgb(175, 175, 175);
+  --bg-color: rgb(187, 187, 187);
   --heading-color: #bf4b37;
   --nav-border: #4f4f4a;
   --marquee: rgba(38, 41, 40, 0.404);
@@ -257,7 +257,7 @@ border-radius: 20px;
     border-radius: 10px;
     background-color: #ff6347;
     border: none;
-    color: var(--font-color);
+    color: white;
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
