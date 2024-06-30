@@ -16,6 +16,7 @@
   --heading-color: #bf4b37;
   --nav-border: #4f4f4a;
   --marquee: rgba(38, 41, 40, 0.404);
+  --hover-color: #bbb;
 
 }
 
@@ -27,6 +28,7 @@
   --heading-color: #ff6347;
   --nav-border: black;
 --marquee: #dddddd67;
+--hover-color: #787777;
 }
 
 
@@ -122,7 +124,6 @@ body {
     margin: 5px;
     padding: 5px;
 border-radius: 20px;
-   
   }
 
   .container{
@@ -302,6 +303,8 @@ border-radius: 20px;
     padding: 0;
     font-family: 'poppins',sans-serif;
   }
+
+
   
   li {
     margin: 10px;
@@ -346,7 +349,7 @@ nav a {
     margin-right: 10px;
 }
 nav a:hover {
-    color: #ddd;
+    color: var(--hover-color);
 }
 nav ul {
 
